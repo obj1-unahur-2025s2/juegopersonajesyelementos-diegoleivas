@@ -1,8 +1,10 @@
 object castillo {
-  var altura = 20
+ 
   var defensa = 150
   
-  method verAltura() = altura
+  method verAltura() {
+    return 20
+  }
   
   method recibirAtaque(potencia) {
     defensa -= potencia
@@ -19,7 +21,7 @@ object aurora {
   var altura = 1
   var viva = true
   
-  method verAltura() = altura
+  method verAltura() {return altura} 
   
   method recibirAtaque(potencia) = potencia>=10
   
@@ -33,7 +35,7 @@ object aurora {
 object tipa {
   var altura = 8
   
-  method verAltura() = altura
+  method verAltura()  {return altura}
   
   method recibirAtaque(potencia) {
     
