@@ -17,7 +17,7 @@ object floki {
 
 object mario {
   var valorRecolectado = 10 // aumenta en un valor que depende del elemento
-  var ultimoElemento = null
+  var ultimoElemento = tipa
   
   method encontrar(elemento) {
     valorRecolectado += elemento.otorgarValor()
