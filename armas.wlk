@@ -5,7 +5,7 @@ object jabalina {
     method estaCargada() {return carga}
     method usar() {
         carga=false
-       }
+    }
 
   
 }
