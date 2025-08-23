@@ -8,7 +8,7 @@ object castillo {
     defensa -= potencia
   }
   
-  method otorgarValor() = defensa / 5
+  method otorgarValor() = defensa / 5  
   
   method recibirTrabajo() {
     defensa = (defensa + 20).min(200)
@@ -21,11 +21,7 @@ object aurora {
   
   method verAltura() = altura
   
-  method recibirAtaque(potencia) {
-    if (potencia >= 10) {
-      viva = false
-    }
-  }
+  method recibirAtaque(potencia) = potencia>=10
   
   method otorgarValor() = 15
   
