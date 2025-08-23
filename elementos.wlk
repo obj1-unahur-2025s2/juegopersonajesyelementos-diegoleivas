@@ -40,12 +40,13 @@ object tipa {
   method verAltura() = altura
   
   method recibirAtaque(potencia) {
-     // No le afecta el ataque, permanece igual
+    
+    // No le afecta el ataque, permanece igual
   }
   
   method otorgarValor() = altura * 2 // otorga el doble del su altura
   
   method recibirTrabajo() {
-    altura += 1  // crece en 1m la altura
+    altura += 1 // crece en 1m la altura
   }
 }

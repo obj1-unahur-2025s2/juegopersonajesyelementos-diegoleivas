@@ -11,24 +11,23 @@ object floki {
   
   method encontrar(elemento) {
     if (arma.estaCargada()) elemento.recibirAtaque(arma.potencia())
+    arma.usar()
   }
 }
 
 object mario {
-  var valoRecolectado = 10 // aumenta en un valor que depende del elemento
-  var ultimoElemento=null
+  var valorRecolectado = 10 // aumenta en un valor que depende del elemento
+  var ultimoElemento = null
   
   method encontrar(elemento) {
-    valoRecolectado += elemento.otorgarValor()
+    valorRecolectado += elemento.otorgarValor()
     elemento.recibirTrabajo()
-    ultimoElemento=elemento
-    
-  
+    ultimoElemento = elemento
   }
   
-  method esFeliz() = (valoRecolectado >= 50) || (ultimoElemento.verAltura() >= 10)// necesito encontrar elemento para evaluar segunda opcion 
+  method esFeliz() = (valorRecolectado >= 50) || (ultimoElemento.verAltura()) >= 10
+  // necesito encontrar elemento para evaluar segunda opcion )
 } 
-
 
 
 // jugadora del juego
